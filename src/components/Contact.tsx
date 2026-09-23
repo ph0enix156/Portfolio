@@ -21,7 +21,7 @@ export const Contact: React.FC = () => {
         <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-stone-950 dark:text-stone-50 mb-4 text-balance">
           Let's Connect
         </h1>
-        <p className="text-base sm:text-lg text-stone-600 dark:text-stone-400 font-normal text-balance">
+        <p className="text-base sm:text-lg text-stone-700 dark:text-stone-200 font-normal text-balance">
           Here are my direct contact channels and social platform IDs. Reach out regarding software engineering internships, technical collaborations, or hackathons.
         </p>
       </div>

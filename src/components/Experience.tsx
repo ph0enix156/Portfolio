@@ -19,7 +19,7 @@ export const Experience: React.FC<ExperienceProps> = ({ onNavigate }) => {
         <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-stone-950 dark:text-stone-50 mb-4">
           Experience
         </h1>
-        <p className="text-base sm:text-lg text-stone-600 dark:text-stone-400 font-normal leading-relaxed max-w-2xl">
+        <p className="text-base sm:text-lg text-stone-700 dark:text-stone-200 font-normal leading-relaxed max-w-2xl">
           Client engagements and hands-on freelance web engineering delivering responsive interfaces,
           user-focused web applications, and search engine optimization.
         </p>
@@ -86,7 +86,7 @@ export const Experience: React.FC<ExperienceProps> = ({ onNavigate }) => {
                     {exp.points.map((point, pIdx) => (
                       <div key={pIdx} className="flex items-start gap-3">
                         <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" />
-                        <p className="text-sm sm:text-base text-stone-700 dark:text-stone-300 leading-relaxed font-normal">
+                        <p className="text-sm sm:text-base text-stone-700 dark:text-stone-200 leading-relaxed font-normal">
                           {point}
                         </p>
                       </div>

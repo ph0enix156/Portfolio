@@ -42,7 +42,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
         <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-stone-950 dark:text-stone-50 mb-1">
           {project.title}
         </h3>
-        <p className="text-sm font-medium text-stone-600 dark:text-stone-400 mb-6">
+        <p className="text-sm font-medium text-stone-600 dark:text-stone-300 mb-6">
           {project.subtitle}
         </p>
 
@@ -52,13 +52,13 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
             <Compass className="w-3.5 h-3.5 text-stone-700 dark:text-stone-300" />
             <span>Problem &amp; Motivation</span>
           </div>
-          <p className="text-xs sm:text-sm text-stone-700 dark:text-stone-300 leading-relaxed">
+          <p className="text-xs sm:text-sm text-stone-700 dark:text-stone-200 leading-relaxed">
             {project.problemSolved}
           </p>
         </div>
 
         {/* In-depth Overview */}
-        <div className="mb-6 space-y-3 text-sm text-stone-600 dark:text-stone-300 leading-relaxed">
+        <div className="mb-6 space-y-3 text-sm text-stone-700 dark:text-stone-200 leading-relaxed">
           <div className="text-xs font-semibold uppercase tracking-wider text-stone-500 dark:text-stone-400">
             System Architecture &amp; Implementation
           </div>
@@ -72,7 +72,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
           </div>
           <div className="space-y-2.5">
             {project.keyFeatures.map((feat, idx) => (
-              <div key={idx} className="flex items-start gap-2.5 text-xs sm:text-sm text-stone-700 dark:text-stone-300">
+              <div key={idx} className="flex items-start gap-2.5 text-xs sm:text-sm text-stone-700 dark:text-stone-200">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" />
                 <span>{feat}</span>
               </div>

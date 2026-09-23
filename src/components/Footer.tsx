@@ -47,7 +47,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                       onNavigate(item.id);
                       scrollToTop();
                     }}
-                    className="text-stone-600 dark:text-stone-400 hover:text-stone-950 dark:hover:text-stone-100 transition-colors cursor-pointer text-left"
+                    className="text-stone-600 dark:text-stone-300 hover:text-stone-950 dark:hover:text-white transition-colors cursor-pointer text-left"
                   >
                     {item.label}
                   </button>
@@ -67,7 +67,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   href={PERSONAL_INFO.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2.5 text-stone-600 dark:text-stone-400 hover:text-stone-950 dark:hover:text-stone-100 transition-colors"
+                  className="inline-flex items-center gap-2.5 text-stone-600 dark:text-stone-300 hover:text-stone-950 dark:hover:text-white transition-colors"
                 >
                   <Github className="w-4 h-4 text-stone-600 dark:text-stone-400" />
                   <span>GitHub</span>
@@ -79,7 +79,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   href={PERSONAL_INFO.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2.5 text-stone-600 dark:text-stone-400 hover:text-stone-950 dark:hover:text-stone-100 transition-colors"
+                  className="inline-flex items-center gap-2.5 text-stone-600 dark:text-stone-300 hover:text-stone-950 dark:hover:text-white transition-colors"
                 >
                   <Linkedin className="w-4 h-4 text-[#0a66c2] dark:text-blue-400" />
                   <span>LinkedIn</span>
@@ -91,7 +91,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   href={PERSONAL_INFO.twitter}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2.5 text-stone-600 dark:text-stone-400 hover:text-stone-950 dark:hover:text-stone-100 transition-colors"
+                  className="inline-flex items-center gap-2.5 text-stone-600 dark:text-stone-300 hover:text-stone-950 dark:hover:text-white transition-colors"
                 >
                   <svg className="w-4 h-4 fill-current text-stone-800 dark:text-stone-200" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
@@ -105,7 +105,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   href={PERSONAL_INFO.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2.5 text-stone-600 dark:text-stone-400 hover:text-stone-950 dark:hover:text-stone-100 transition-colors"
+                  className="inline-flex items-center gap-2.5 text-stone-600 dark:text-stone-300 hover:text-stone-950 dark:hover:text-white transition-colors"
                 >
                   <Instagram className="w-4 h-4 text-[#e1306c] dark:text-pink-400" />
                   <span>Instagram</span>
@@ -115,7 +115,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               <li>
                 <a
                   href={`mailto:${PERSONAL_INFO.email}`}
-                  className="inline-flex items-center gap-2.5 text-stone-600 dark:text-stone-400 hover:text-stone-950 dark:hover:text-stone-100 transition-colors"
+                  className="inline-flex items-center gap-2.5 text-stone-600 dark:text-stone-300 hover:text-stone-950 dark:hover:text-white transition-colors"
                 >
                   <Mail className="w-4 h-4 text-[#00875a] dark:text-emerald-400" />
                   <span>Email Direct</span>

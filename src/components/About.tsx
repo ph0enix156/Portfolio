@@ -116,21 +116,21 @@ export const About: React.FC<AboutProps> = ({ onNavigate }) => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          <div className="lg:col-span-8 space-y-5 text-base text-stone-600 dark:text-stone-350 leading-relaxed">
+          <div className="lg:col-span-8 space-y-5 text-base text-stone-700 dark:text-stone-200 leading-relaxed font-normal">
             <p>
               I enjoy working on problems where technology can have a practical impact. From building{' '}
-              <span className="font-semibold text-stone-900 dark:text-stone-100">SignBridge</span>, a computer-vision-based Indian Sign Language project, to developing{' '}
-              <span className="font-semibold text-stone-900 dark:text-stone-100">fasalMitra</span>, an AI-powered crop disease detection platform, I focus on turning technical concepts into solutions that are useful and accessible.
+              <span className="font-semibold text-stone-950 dark:text-white">SignBridge</span>, a computer-vision-based Indian Sign Language project, to developing{' '}
+              <span className="font-semibold text-stone-950 dark:text-white">fasalMitra</span>, an AI-powered crop disease detection platform, I focus on turning technical concepts into solutions that are useful and accessible.
             </p>
             <p>
               Hackathons have played an important role in my growth as a developer. Working under tight deadlines has taught me how to break down problems, make practical technical decisions, collaborate with a team, and turn an idea into a working prototype.
             </p>
             <p>
-              Beyond purely technical pursuits, I take an active role in campus leadership—currently serving as Co-Lead of Events &amp; Operations at the <span className="font-semibold text-stone-900 dark:text-stone-100">CII Young Indians</span> student chapter, and previously as Co-Technical Lead at the <span className="font-semibold text-stone-900 dark:text-stone-100">Insight AI Club</span> at MIT-WPU. Having also trained as a classical Tabla player, I bring steady discipline, focus under pressure, and a collaborative team mindset to engineering and beyond.
+              Beyond purely technical pursuits, I take an active role in campus leadership—currently serving as Co-Lead of Events &amp; Operations at the <span className="font-semibold text-stone-950 dark:text-white">CII Young Indians</span> student chapter, and previously as Co-Technical Lead at the <span className="font-semibold text-stone-950 dark:text-white">Insight AI Club</span> at MIT-WPU. Having also trained as a classical Tabla player, I bring steady discipline, focus under pressure, and a collaborative team mindset to engineering and beyond.
             </p>
 
-            <div className="pt-3 flex flex-wrap items-center gap-x-3 gap-y-1.5 text-xs text-stone-500 dark:text-stone-400 font-mono">
-              <span className="font-medium text-stone-800 dark:text-stone-200">B.Tech Computer Science &amp; Engineering</span>
+            <div className="pt-3 flex flex-wrap items-center gap-x-3 gap-y-1.5 text-xs text-stone-600 dark:text-stone-300 font-mono">
+              <span className="font-medium text-stone-900 dark:text-stone-100">B.Tech Computer Science &amp; Engineering</span>
               <span aria-hidden="true">·</span>
               <span>MIT-WPU Pune (Expected 2028)</span>
               <span aria-hidden="true">·</span>
@@ -207,7 +207,7 @@ export const About: React.FC<AboutProps> = ({ onNavigate }) => {
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-stone-950 dark:text-stone-50">
             What I Work On
           </h2>
-          <p className="text-sm text-stone-600 dark:text-stone-400 mt-1">
+          <p className="text-sm text-stone-700 dark:text-stone-200 mt-1">
             Practical domains where I spend my time building software and exploring technologies.
           </p>
         </div>
@@ -225,14 +225,14 @@ export const About: React.FC<AboutProps> = ({ onNavigate }) => {
                     <div className="p-2.5 rounded-xl bg-stone-100 dark:bg-stone-800 text-stone-900 dark:text-stone-100">
                       <Icon className="w-5 h-5" />
                     </div>
-                    <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300">
+                    <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-200">
                       {item.tag}
                     </span>
                   </div>
                   <h3 className="text-base font-bold text-stone-950 dark:text-stone-100 mb-2">
                     {item.title}
                   </h3>
-                  <p className="text-xs sm:text-sm text-stone-600 dark:text-stone-400 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-stone-700 dark:text-stone-300 leading-relaxed">
                     {item.description}
                   </p>
                 </div>
@@ -251,7 +251,7 @@ export const About: React.FC<AboutProps> = ({ onNavigate }) => {
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-stone-950 dark:text-stone-50 flex items-center gap-2.5">
             <span>My Approach</span>
           </h2>
-          <p className="text-sm text-stone-600 dark:text-stone-400 mt-1">
+          <p className="text-sm text-stone-700 dark:text-stone-200 mt-1">
             A simple, pragmatic feedback loop for delivering software that actually works.
           </p>
         </div>
@@ -272,7 +272,7 @@ export const About: React.FC<AboutProps> = ({ onNavigate }) => {
                 <h3 className="text-sm font-bold text-stone-950 dark:text-stone-100 mb-1.5">
                   {step.title}
                 </h3>
-                <p className="text-xs text-stone-600 dark:text-stone-400 leading-relaxed">
+                <p className="text-xs text-stone-700 dark:text-stone-300 leading-relaxed">
                   {step.detail}
                 </p>
               </div>
@@ -290,7 +290,7 @@ export const About: React.FC<AboutProps> = ({ onNavigate }) => {
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-stone-950 dark:text-stone-50">
             Education Journey
           </h2>
-          <p className="text-sm text-stone-600 dark:text-stone-400 mt-1">
+          <p className="text-sm text-stone-700 dark:text-stone-200 mt-1">
             From foundational schooling and first web scripts in Nashik to studying Computer Science at MIT-WPU Pune.
           </p>
         </div>
@@ -318,17 +318,17 @@ export const About: React.FC<AboutProps> = ({ onNavigate }) => {
                 </div>
               </div>
 
-              <div className="text-xs font-mono text-stone-600 dark:text-stone-300 self-start md:self-auto px-3 py-1.5 rounded-lg bg-stone-50 dark:bg-stone-800/80 border border-stone-200/80 dark:border-stone-700/60 shrink-0">
+              <div className="text-xs font-mono text-stone-700 dark:text-stone-200 self-start md:self-auto px-3 py-1.5 rounded-lg bg-stone-50 dark:bg-stone-800/80 border border-stone-200/80 dark:border-stone-700/60 shrink-0">
                 Pune, Maharashtra · Expected Graduation: 2028
               </div>
             </div>
 
-            <p className="text-xs sm:text-sm text-stone-600 dark:text-stone-400 leading-relaxed max-w-3xl mb-4">
+            <p className="text-xs sm:text-sm text-stone-700 dark:text-stone-300 leading-relaxed max-w-3xl mb-4">
               Pursuing a comprehensive curriculum in Computer Science and Engineering with coursework covering Data Structures &amp; Algorithms, Database Management Systems, Object-Oriented Programming, Operating Systems, and Artificial Intelligence.
             </p>
 
-            <div className="pt-3 border-t border-stone-100 dark:border-stone-800 flex flex-wrap items-center gap-2 text-xs font-mono text-stone-600 dark:text-stone-400">
-              <span className="text-stone-400 dark:text-stone-500 font-semibold">Coursework:</span>
+            <div className="pt-3 border-t border-stone-100 dark:border-stone-800 flex flex-wrap items-center gap-2 text-xs font-mono text-stone-700 dark:text-stone-300">
+              <span className="text-stone-500 dark:text-stone-400 font-semibold">Coursework:</span>
               <span className="px-2 py-0.5 rounded bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300">Data Structures &amp; Algorithms</span>
               <span className="px-2 py-0.5 rounded bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300">Operating Systems</span>
               <span className="px-2 py-0.5 rounded bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300">DBMS &amp; SQL</span>
@@ -346,7 +346,7 @@ export const About: React.FC<AboutProps> = ({ onNavigate }) => {
                   <div className="p-2.5 rounded-xl bg-stone-100 dark:bg-stone-800 text-stone-900 dark:text-stone-100">
                     <BookOpen className="w-5 h-5" />
                   </div>
-                  <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300">
+                  <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-200">
                     Class 12 (HSC)
                   </span>
                 </div>
@@ -361,7 +361,7 @@ export const About: React.FC<AboutProps> = ({ onNavigate }) => {
                   Matoshri Junior College, Eklahare, Nashik
                 </div>
 
-                <p className="text-xs text-stone-600 dark:text-stone-400 leading-relaxed mb-4">
+                <p className="text-xs sm:text-sm text-stone-700 dark:text-stone-300 leading-relaxed mb-4">
                   Completed Class 12 Higher Secondary Certificate in the Science stream. Discovered an early passion for web development and software through practical coursework in HTML, CSS, and server-side PHP scripting.
                 </p>
               </div>
@@ -374,8 +374,8 @@ export const About: React.FC<AboutProps> = ({ onNavigate }) => {
                   <span className="px-2 py-0.5 rounded bg-emerald-50 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 border border-emerald-200/60 dark:border-emerald-800/60 font-medium">HTML</span>
                   <span className="px-2 py-0.5 rounded bg-emerald-50 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 border border-emerald-200/60 dark:border-emerald-800/60 font-medium">CSS</span>
                   <span className="px-2 py-0.5 rounded bg-emerald-50 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 border border-emerald-200/60 dark:border-emerald-800/60 font-medium">PHP</span>
-                  <span className="px-2 py-0.5 rounded bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-400">Computer Science</span>
-                  <span className="px-2 py-0.5 rounded bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-400">Mathematics</span>
+                  <span className="px-2 py-0.5 rounded bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300">Computer Science</span>
+                  <span className="px-2 py-0.5 rounded bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300">Mathematics</span>
                 </div>
               </div>
             </div>
@@ -387,7 +387,7 @@ export const About: React.FC<AboutProps> = ({ onNavigate }) => {
                   <div className="p-2.5 rounded-xl bg-stone-100 dark:bg-stone-800 text-stone-900 dark:text-stone-100">
                     <Trophy className="w-5 h-5" />
                   </div>
-                  <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300">
+                  <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-200">
                     Class 10 (SSC)
                   </span>
                 </div>
@@ -402,7 +402,7 @@ export const About: React.FC<AboutProps> = ({ onNavigate }) => {
                   Maratha High School, Nashik
                 </div>
 
-                <p className="text-xs text-stone-600 dark:text-stone-400 leading-relaxed mb-4">
+                <p className="text-xs sm:text-sm text-stone-700 dark:text-stone-300 leading-relaxed mb-4">
                   Completed Class 10 Secondary School Certificate. Developed foundational computer knowledge, quantitative problem solving, and analytical thinking.
                 </p>
               </div>
@@ -413,8 +413,8 @@ export const About: React.FC<AboutProps> = ({ onNavigate }) => {
                 </div>
                 <div className="flex flex-wrap gap-1.5 text-xs font-mono">
                   <span className="px-2 py-0.5 rounded bg-blue-50 dark:bg-blue-950/60 text-blue-800 dark:text-blue-300 border border-blue-200/60 dark:border-blue-800/60 font-medium">Basic Computer Knowledge</span>
-                  <span className="px-2 py-0.5 rounded bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-400">Mathematics</span>
-                  <span className="px-2 py-0.5 rounded bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-400">Science</span>
+                  <span className="px-2 py-0.5 rounded bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300">Mathematics</span>
+                  <span className="px-2 py-0.5 rounded bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300">Science</span>
                 </div>
               </div>
             </div>
@@ -431,7 +431,7 @@ export const About: React.FC<AboutProps> = ({ onNavigate }) => {
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-stone-950 dark:text-stone-50">
             Beyond Code
           </h2>
-          <p className="text-sm text-stone-600 dark:text-stone-400 mt-1">
+          <p className="text-sm text-stone-700 dark:text-stone-200 mt-1">
             Experiences outside pure software that directly shape how I lead, focus, collaborate, and solve problems.
           </p>
         </div>
@@ -456,7 +456,7 @@ export const About: React.FC<AboutProps> = ({ onNavigate }) => {
                   <div className="text-xs font-mono text-stone-500 dark:text-stone-400 mb-3">
                     {item.subtitle}
                   </div>
-                  <p className="text-xs sm:text-sm text-stone-600 dark:text-stone-400 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-stone-700 dark:text-stone-300 leading-relaxed">
                     {item.description}
                   </p>
                 </div>

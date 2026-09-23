@@ -66,7 +66,7 @@ export const HomeOverview: React.FC<HomeOverviewProps> = ({ onNavigate }) => {
         <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-stone-950 dark:text-stone-50 mb-4 text-balance">
           Explore Dedicated Sections
         </h2>
-        <p className="text-base sm:text-lg text-stone-600 dark:text-stone-400 font-normal leading-relaxed text-balance">
+        <p className="text-base sm:text-lg text-stone-700 dark:text-stone-200 font-normal leading-relaxed text-balance">
           Select any section below or use the top navigation bar to explore detailed write-ups, codebases, and technical documentation.
         </p>
       </div>
@@ -99,7 +99,7 @@ export const HomeOverview: React.FC<HomeOverviewProps> = ({ onNavigate }) => {
                   {sec.title}
                 </h3>
 
-                <p className="text-xs sm:text-sm text-stone-600 dark:text-stone-400 leading-relaxed mb-6">
+                <p className="text-xs sm:text-sm text-stone-700 dark:text-stone-300 leading-relaxed mb-6">
                   {sec.description}
                 </p>
               </div>

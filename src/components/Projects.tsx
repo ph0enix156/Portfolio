@@ -163,7 +163,7 @@ export const Projects: React.FC<ProjectsProps> = ({ onNavigate }) => {
         <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-stone-950 dark:text-stone-50 mb-3 text-balance">
           Projects &amp; Systems
         </h1>
-        <p className="text-sm sm:text-base text-stone-600 dark:text-stone-400 font-normal leading-relaxed text-balance">
+        <p className="text-sm sm:text-base text-stone-700 dark:text-stone-200 font-normal leading-relaxed text-balance">
           Practical software systems engineered to solve real challenges in assistive communication,
           agricultural intelligence, financial telemetry, systems programming, and campus logistics.
         </p>
@@ -293,7 +293,7 @@ export const Projects: React.FC<ProjectsProps> = ({ onNavigate }) => {
                   </div>
 
                   {/* Subtitle */}
-                  <p className="text-xs font-medium text-stone-500 dark:text-stone-400 mb-3 line-clamp-1">
+                  <p className="text-xs font-medium text-stone-600 dark:text-stone-300 mb-3 line-clamp-1">
                     {project.subtitle}
                   </p>
 

@@ -75,7 +75,7 @@ export const Skills: React.FC<SkillsProps> = ({ onNavigate }) => {
         <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-stone-950 dark:text-stone-50 mb-3 text-balance">
           Skills &amp; Technologies
         </h1>
-        <p className="text-base sm:text-lg text-stone-600 dark:text-stone-400 font-normal leading-relaxed text-balance">
+        <p className="text-base sm:text-lg text-stone-700 dark:text-stone-200 font-normal leading-relaxed text-balance">
           Comprehensive technical skillset spanning core algorithmic programming, modern full-stack
           web systems, applied AI &amp; LLM architectures, cloud databases, and developer automation.
         </p>
