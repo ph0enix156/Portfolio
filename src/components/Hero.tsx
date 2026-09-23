@@ -37,7 +37,7 @@ export const Hero: React.FC<HeroProps> = ({ onHeroComplete, onContinueClick, isL
             I am Pushkar Gangurde
           </h1>
 
-          <p className="text-base sm:text-xl text-stone-200 leading-relaxed font-normal mb-8 drop-shadow-sm max-w-xl">
+          <p className="text-base sm:text-xl text-white leading-relaxed font-normal mb-8 drop-shadow-md max-w-xl">
             Computer Science Engineering Student. Building practical solutions with AI, software and web technologies.
           </p>
 

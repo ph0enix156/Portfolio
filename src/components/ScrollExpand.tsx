@@ -381,7 +381,7 @@ const ScrollExpand: React.FC<ScrollExpandProps> = ({
           {!isLocked && title ? (
             <div
               ref={titleRef}
-              className="absolute inset-0 flex items-center justify-center m-0 px-[6%] text-center font-bold leading-none tracking-[-0.03em] text-stone-900 dark:text-white [font-size:var(--se-title-size)] [text-shadow:0_4px_32px_rgba(0,0,0,0.15)] dark:[text-shadow:0_4px_32px_rgba(0,0,0,0.6)] pointer-events-none [will-change:opacity,transform]"
+              className="absolute inset-0 flex items-center justify-center m-0 px-[6%] text-center font-bold leading-none tracking-[-0.03em] text-white [font-size:var(--se-title-size)] [text-shadow:0_4px_32px_rgba(0,0,0,0.8)] pointer-events-none [will-change:opacity,transform]"
             >
               {title}
             </div>
@@ -389,7 +389,7 @@ const ScrollExpand: React.FC<ScrollExpandProps> = ({
           {!isLocked && scrollHint ? (
             <div
               ref={hintRef}
-              className="absolute inset-x-0 bottom-6 text-center text-xs sm:text-sm tracking-wider uppercase text-stone-600 dark:text-white/70 font-medium pointer-events-none [will-change:opacity,transform] flex items-center justify-center gap-1.5"
+              className="absolute inset-x-0 bottom-6 text-center text-xs sm:text-sm tracking-wider uppercase text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.8)] font-medium pointer-events-none [will-change:opacity,transform] flex items-center justify-center gap-1.5"
             >
               <span>{scrollHint}</span>
               <span className="inline-block animate-bounce">↓</span>
