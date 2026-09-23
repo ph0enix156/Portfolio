@@ -35,7 +35,7 @@ export const Hero: React.FC<HeroProps> = ({ onHeroComplete, onContinueClick, isL
         {/* Top: "I am" */}
         <div className="w-full flex justify-center pt-10 sm:pt-16 md:pt-20 lg:pt-24 pointer-events-none">
           <h2 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black tracking-tight text-white drop-shadow-[0_6px_32px_rgba(0,0,0,0.95)] select-none">
-            I am
+            I'm
           </h2>
         </div>
 

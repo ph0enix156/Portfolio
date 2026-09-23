@@ -194,7 +194,7 @@ const SwarmCursor = ({
   wander = 0.25,
   trail = 0.75,
   scatterOnClick = true,
-  scatterOnScroll = true,
+  scatterOnScroll = false,
   globalPointer = false,
   enabled = true,
   children,

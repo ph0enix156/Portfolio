@@ -115,7 +115,7 @@ export default function App() {
           wander={0.25}
           trail={0.75}
           scatterOnClick
-          scatterOnScroll
+          scatterOnScroll={false}
           globalPointer
           className="w-full h-full"
         />
