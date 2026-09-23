@@ -9,7 +9,7 @@ interface ResumeModalProps {
 export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
-  const pdfUrl = '/Pushkar%20Gangurde%20-resume.pdf';
+  const pdfUrl = '/resume.pdf';
 
   return (
     <div
@@ -42,7 +42,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
             {/* Download PDF button */}
             <a
               href={pdfUrl}
-              download="Pushkar Gangurde -resume.pdf"
+              download="Pushkar_Gangurde_Resume.pdf"
               className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-stone-200 bg-stone-800 hover:bg-stone-700 hover:text-white rounded-lg transition-colors"
               title="Download Resume PDF"
             >

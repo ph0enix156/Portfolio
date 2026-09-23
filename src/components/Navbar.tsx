@@ -94,7 +94,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             type="button"
             onClick={onOpenResume}
             className="inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-semibold text-stone-800 dark:text-stone-200 hover:text-stone-950 dark:hover:text-white bg-stone-100 dark:bg-stone-850 hover:bg-stone-200/80 dark:hover:bg-stone-800 border border-stone-200/60 dark:border-stone-700/60 rounded-md transition-colors cursor-pointer"
-            title="Open Pushkar Gangurde -resume.pdf"
+            title="View Pushkar Gangurde Resume (PDF)"
           >
             <FileText className="w-3.5 h-3.5 text-stone-700 dark:text-stone-300" />
             <span>Resume (PDF)</span>
