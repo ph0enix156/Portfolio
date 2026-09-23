@@ -362,13 +362,13 @@ const ScrollExpand: React.FC<ScrollExpandProps> = ({
             {media}
             <div
               ref={scrimRef}
-              className="absolute inset-0 pointer-events-none bg-[linear-gradient(to_top,rgba(0,0,0,0.82),rgba(0,0,0,0.3)_45%,rgba(0,0,0,0.55))]"
+              className="absolute inset-0 pointer-events-none bg-[linear-gradient(to_top,rgba(0,0,0,0.7)_0%,transparent_35%,transparent_65%,rgba(0,0,0,0.5)_100%)]"
               style={{ opacity: isLocked ? overlayScrim : 0 }}
             />
             {children ? (
               <div
                 ref={overlayRef}
-                className="absolute inset-0 flex flex-col items-center justify-center text-center p-[6%] [will-change:opacity,transform]"
+                className="absolute inset-0 flex flex-col justify-between p-6 sm:p-10 md:p-12 [will-change:opacity,transform]"
                 style={{
                   opacity: isLocked ? 1 : 0,
                   pointerEvents: isLocked ? 'auto' : 'none',
