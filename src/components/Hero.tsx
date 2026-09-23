@@ -33,8 +33,8 @@ export const Hero: React.FC<HeroProps> = ({ onHeroComplete, onContinueClick, isL
         onComplete={onHeroComplete}
       >
         {/* Top: "I am" */}
-        <div className="w-full flex justify-center pt-2 sm:pt-6 md:pt-8 pointer-events-none">
-          <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white drop-shadow-[0_4px_24px_rgba(0,0,0,0.9)] select-none">
+        <div className="w-full flex justify-center pt-10 sm:pt-16 md:pt-20 lg:pt-24 pointer-events-none">
+          <h2 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black tracking-tight text-white drop-shadow-[0_6px_32px_rgba(0,0,0,0.95)] select-none">
             I am
           </h2>
         </div>
