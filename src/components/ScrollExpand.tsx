@@ -327,6 +327,7 @@ const ScrollExpand: React.FC<ScrollExpandProps> = ({
   return (
     <div
       ref={rootRef}
+      data-lenis-prevent={!isLocked ? '' : undefined}
       className={`relative w-full h-full ${
         isLocked
           ? 'overflow-hidden'

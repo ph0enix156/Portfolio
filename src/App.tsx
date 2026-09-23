@@ -18,7 +18,10 @@ import { Footer } from './components/Footer';
 import { ResumeModal } from './components/ResumeModal';
 import SwarmCursor from './components/SwarmCursor';
 
+import { useLenis } from 'lenis/react';
+
 export default function App() {
+  const lenis = useLenis();
   const [currentPage, setCurrentPage] = useState<PageId>('home');
   const [heroFinished, setHeroFinished] = useState(false);
   const [resumeOpen, setResumeOpen] = useState(false);
@@ -48,15 +51,18 @@ export default function App() {
   useEffect(() => {
     if (currentPage === 'home' && !heroFinished) {
       document.body.style.overflow = 'hidden';
+      lenis?.stop();
       window.scrollTo(0, 0);
     } else {
       document.body.style.overflow = '';
+      lenis?.start();
     }
 
     return () => {
       document.body.style.overflow = '';
+      lenis?.start();
     };
-  }, [currentPage, heroFinished]);
+  }, [currentPage, heroFinished, lenis]);
 
   const handleNavigate = (page: PageId) => {
     setCurrentPage(page);
@@ -66,21 +72,31 @@ export default function App() {
     } else {
       window.location.hash = '';
     }
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (lenis) {
+      lenis.scrollTo(0, { immediate: false, duration: 0.8 });
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   };
 
   const handleHeroComplete = () => {
     // Reached bottom of hero expansion: unlock page and reveal Navbar
     setHeroFinished(true);
+    lenis?.start();
   };
 
   const handleHeroContinue = () => {
     // User clicked "Continue to Portfolio" button
     setHeroFinished(true);
+    lenis?.start();
     setTimeout(() => {
-      const overviewEl = document.getElementById('home-overview');
-      if (overviewEl) {
-        overviewEl.scrollIntoView({ behavior: 'smooth' });
+      if (lenis) {
+        lenis.scrollTo('#home-overview', { duration: 1.2 });
+      } else {
+        const overviewEl = document.getElementById('home-overview');
+        if (overviewEl) {
+          overviewEl.scrollIntoView({ behavior: 'smooth' });
+        }
       }
     }, 50);
   };
