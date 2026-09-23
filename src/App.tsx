@@ -16,7 +16,6 @@ import { Experience } from './components/Experience';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { ResumeModal } from './components/ResumeModal';
-import SwarmCursor from './components/SwarmCursor';
 
 import { useLenis } from 'lenis/react';
 
@@ -103,24 +102,6 @@ export default function App() {
 
   return (
     <div className="relative min-h-screen bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-100 flex flex-col font-sans selection:bg-stone-900 selection:text-stone-50 dark:selection:bg-stone-100 dark:selection:text-stone-900 transition-colors duration-200">
-      {/* Ambient Interactive Swarm Cursor in Main Layout */}
-      <div className="fixed inset-0 pointer-events-none z-30 overflow-hidden mix-blend-difference opacity-80 dark:opacity-95">
-        <SwarmCursor
-          color="#ffffff"
-          accentColor="#ffffff"
-          count={4}
-          size={10}
-          speed={2.5}
-          spread={100}
-          wander={0.25}
-          trail={0.75}
-          scatterOnClick
-          scatterOnScroll={false}
-          globalPointer
-          className="w-full h-full"
-        />
-      </div>
-
       {/* Reading Progress Indicator */}
       <ReadingProgressBar visible={currentPage !== 'home' || heroFinished} />
 
