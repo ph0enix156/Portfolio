@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { X, Download, ExternalLink, FileText } from 'lucide-react';
 
 interface ResumeModalProps {
@@ -7,6 +7,15 @@ interface ResumeModalProps {
 }
 
 export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => {
+  useEffect(() => {
+    if (!isOpen) return;
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [isOpen]);
+
   if (!isOpen) return null;
 
   const pdfUrl = '/resume.pdf';
@@ -15,10 +24,12 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
     <div
       role="dialog"
       aria-modal="true"
+      data-lenis-prevent
       className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-stone-950/80 backdrop-blur-sm animate-in fade-in duration-150"
       onClick={onClose}
     >
       <div
+        data-lenis-prevent
         className="relative w-full max-w-5xl h-[90vh] bg-stone-900 rounded-2xl border border-stone-700 shadow-2xl flex flex-col overflow-hidden text-stone-100"
         onClick={(e) => e.stopPropagation()}
       >
