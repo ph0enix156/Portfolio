@@ -54,13 +54,22 @@ export const Navbar: React.FC<NavbarProps> = ({
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 sm:px-8 flex items-center justify-between">
-        {/* Zone 1: Brand Wordmark */}
+        {/* Zone 1: Brand Avatar Photo */}
         <button
           type="button"
           onClick={() => handleLinkClick('home')}
-          className="text-lg font-bold tracking-tight text-stone-900 dark:text-stone-100 hover:text-stone-700 dark:hover:text-stone-300 transition-colors cursor-pointer text-left"
+          className="group relative flex items-center justify-center cursor-pointer transition-transform duration-200 hover:scale-105 active:scale-95 focus:outline-none"
+          aria-label={`${PERSONAL_INFO.fullName} - Home`}
+          title={`${PERSONAL_INFO.fullName} - Home`}
         >
-          {PERSONAL_INFO.name}
+          <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full overflow-hidden border-2 border-stone-200 dark:border-stone-700 group-hover:border-stone-400 dark:group-hover:border-stone-500 shadow-xs ring-2 ring-stone-900/5 dark:ring-white/10 transition-colors">
+            <img
+              src="/profile.jpeg"
+              alt={PERSONAL_INFO.fullName}
+              className="w-full h-full object-cover object-top"
+              loading="eager"
+            />
+          </div>
         </button>
 
         {/* Zone 2: Dedicated Page Navigation Links */}
