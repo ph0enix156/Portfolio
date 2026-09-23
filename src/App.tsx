@@ -108,7 +108,7 @@ export default function App() {
         <SwarmCursor
           color="#ffffff"
           accentColor="#ffffff"
-          count={10}
+          count={4}
           size={10}
           speed={2.5}
           spread={100}
