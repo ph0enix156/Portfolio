@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Page Titles & Meta Descriptions -->
+    <title>Pushkar Gangurde | Computer Science &amp; AI Portfolio</title>
+    <meta name="title" content="Pushkar Gangurde | Computer Science &amp; AI Portfolio" />
+    <meta
+      name="description"
+      content="Portfolio of Pushkar Gangurde — Computer Science Engineering student at MIT-WPU Pune building practical AI, computer vision, and full-stack software systems."
+    />
+    <meta name="keywords" content="Pushkar Gangurde, Computer Science, AI, Machine Learning, Computer Vision, SignBridge, fasalMitra, MIT-WPU, Pune, Software Engineering, Systems Programming, C++, Python, React" />
+    <meta name="author" content="Pushkar Gangurde" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Favicon & Touch Icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+
+    <!-- Theme Color for Browsers & Mobile Devices -->
+    <meta name="theme-color" content="#1c1917" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#fafaf9" media="(prefers-color-scheme: light)" />
+
+    <!-- Zero-flicker theme initialization -->
+    <script>
+      (function() {
+        try {
+          var stored = localStorage.getItem('pushkar_portfolio_theme');
+          var isDark = (stored === 'light' || stored === 'dark')
+            ? stored === 'dark'
+            : window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (isDark) {
+            document.documentElement.classList.add('dark');
+            document.documentElement.style.colorScheme = 'dark';
+          } else {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.style.colorScheme = 'light';
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- OpenGraph Social Graph Metadata (Facebook, LinkedIn, Discord, Slack, iMessage) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Pushkar Gangurde Portfolio" />
+    <meta property="og:title" content="Pushkar Gangurde | Computer Science &amp; AI Portfolio" />
+    <meta
+      property="og:description"
+      content="Portfolio of Pushkar Gangurde — Computer Science Engineering student at MIT-WPU Pune building practical AI, computer vision, and full-stack software systems."
+    />
+    <meta property="og:image" content="/hero.jpeg" />
+    <meta property="og:image:alt" content="Pushkar Gangurde - Computer Science Engineering Portfolio" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter / X Card Metadata -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pushkar Gangurde | Computer Science &amp; AI Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Portfolio of Pushkar Gangurde — Computer Science Engineering student at MIT-WPU Pune building practical AI, computer vision, and full-stack software systems."
+    />
+    <meta name="twitter:image" content="/hero.jpeg" />
+    <meta name="twitter:image:alt" content="Pushkar Gangurde - Computer Science Engineering Portfolio" />
+
+    <!-- Typography & Font Preconnects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Schema.org JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Pushkar Gangurde",
+        "alternateName": "Pushkar",
+        "jobTitle": "Computer Science Engineering Student",
+        "affiliation": {
+          "@type": "EducationalOrganization",
+          "name": "MIT World Peace University",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Pune",
+            "addressRegion": "Maharashtra",
+            "addressCountry": "IN"
+          }
+        },
+        "alumniOf": [
+          {
+            "@type": "EducationalOrganization",
+            "name": "Matoshri Junior College",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Nashik",
+              "addressRegion": "Maharashtra",
+              "addressCountry": "IN"
+            }
+          },
+          {
+            "@type": "EducationalOrganization",
+            "name": "Maratha High School",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Nashik",
+              "addressRegion": "Maharashtra",
+              "addressCountry": "IN"
+            }
+          }
+        ],
+        "sameAs": [
+          "https://github.com/pushkar156",
+          "https://linkedin.com/in/pushkargangurde"
+        ],
+        "knowsAbout": [
+          "Artificial Intelligence",
+          "Computer Vision",
+          "Machine Learning",
+          "Full-Stack Web Development",
+          "C++",
+          "Python",
+          "React",
+          "TypeScript",
+          "FastAPI",
+          "Supabase"
+        ]
+      }
+    }
+    </script>
+  </head>
+  <body class="bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-100 antialiased selection:bg-stone-900 selection:text-stone-50 dark:selection:bg-stone-100 dark:selection:text-stone-900">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
