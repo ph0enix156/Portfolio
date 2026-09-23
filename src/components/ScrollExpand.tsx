@@ -390,7 +390,7 @@ const ScrollExpand: React.FC<ScrollExpandProps> = ({
           {!isLocked && scrollHint ? (
             <div
               ref={hintRef}
-              className="absolute inset-x-0 bottom-6 text-center text-xs sm:text-sm tracking-wider uppercase text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.8)] font-medium pointer-events-none [will-change:opacity,transform] flex items-center justify-center gap-1.5"
+              className="absolute inset-x-0 bottom-6 text-center text-xs sm:text-sm tracking-wider uppercase text-stone-900 dark:text-white font-semibold dark:font-medium pointer-events-none [will-change:opacity,transform] flex items-center justify-center gap-1.5 dark:[text-shadow:0_2px_12px_rgba(0,0,0,0.8)]"
             >
               <span>{scrollHint}</span>
               <span className="inline-block animate-bounce">↓</span>
